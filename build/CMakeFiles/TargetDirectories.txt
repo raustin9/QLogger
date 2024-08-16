@@ -1,4 +1,0 @@
-/home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles/qlogger.dir
-/home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles/simple.dir
-/home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles/edit_cache.dir
-/home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles/rebuild_cache.dir

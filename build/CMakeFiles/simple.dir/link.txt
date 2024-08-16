@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wall -std=c++20 -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 CMakeFiles/simple.dir/examples/simple.cc.o -o simple  -Wl,-rpath,/home/raustin9/src/amphora/external/Mantis/external/QLogger/build libqlogger.so 
