@@ -19,9 +19,8 @@ namespace platform {
 // The list of colors that are able to be printed to the console
 enum class color : int {
     RED,
-    ORANGE,
-    BLUE,
     MAGENTA,
+    BLUE,
     CYAN,
     WHITE,
     BLACK,

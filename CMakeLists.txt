@@ -4,7 +4,7 @@ project(qlogger VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_CXX_FLAGS "-Wall -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11")
+set(CMAKE_CXX_FLAGS "-Wall -std=c++20 -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11")
 
 file(GLOB QLOGGER_SOURCES 
     "${PROJECT_SOURCE_DIR}/src/*.cc"

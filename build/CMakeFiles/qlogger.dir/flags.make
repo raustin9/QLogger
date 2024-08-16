@@ -6,5 +6,5 @@ CXX_DEFINES = -Dqlogger_EXPORTS
 
 CXX_INCLUDES = -I/home/raustin9/src/amphora/external/Mantis/external/QLogger/include/qlogger
 
-CXX_FLAGS = -Wall -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -fPIC -std=c++20
+CXX_FLAGS = -Wall -std=c++20 -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11 -fPIC -std=c++20
 
