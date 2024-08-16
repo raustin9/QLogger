@@ -83,12 +83,12 @@ clean: CMakeFiles/simple.dir/clean
 CMakeFiles/qlogger.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlogger.dir/build.make CMakeFiles/qlogger.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlogger.dir/build.make CMakeFiles/qlogger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles --progress-num=1,2 "Built target qlogger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles --progress-num=1,2,3 "Built target qlogger"
 .PHONY : CMakeFiles/qlogger.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/qlogger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/qlogger.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles 0
 .PHONY : CMakeFiles/qlogger.dir/rule
@@ -109,12 +109,12 @@ CMakeFiles/qlogger.dir/clean:
 CMakeFiles/simple.dir/all: CMakeFiles/qlogger.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple.dir/build.make CMakeFiles/simple.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple.dir/build.make CMakeFiles/simple.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles --progress-num=3,4 "Built target simple"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles --progress-num=4,5 "Built target simple"
 .PHONY : CMakeFiles/simple.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/simple.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/simple.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/raustin9/src/amphora/external/Mantis/external/QLogger/build/CMakeFiles 0
 .PHONY : CMakeFiles/simple.dir/rule

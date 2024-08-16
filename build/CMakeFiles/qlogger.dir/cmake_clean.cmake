@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/qlogger.dir/src/platform/platform_linux.cc.o"
+  "CMakeFiles/qlogger.dir/src/platform/platform_linux.cc.o.d"
   "CMakeFiles/qlogger.dir/src/qlogger.cc.o"
   "CMakeFiles/qlogger.dir/src/qlogger.cc.o.d"
   "libqlogger.pdb"

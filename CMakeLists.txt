@@ -8,6 +8,7 @@ set(CMAKE_CXX_FLAGS "-Wall -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu
 
 file(GLOB QLOGGER_SOURCES 
     "${PROJECT_SOURCE_DIR}/src/*.cc"
+    "${PROJECT_SOURCE_DIR}/src/platform/*.cc"
 )
 
 file(GLOB QLOGGER_HEADERS_PRIVATE 

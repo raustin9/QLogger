@@ -166,6 +166,30 @@ examples/simple.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple.dir/build.make CMakeFiles/simple.dir/examples/simple.cc.s
 .PHONY : examples/simple.cc.s
 
+src/platform/platform_linux.o: src/platform/platform_linux.cc.o
+.PHONY : src/platform/platform_linux.o
+
+# target to build an object file
+src/platform/platform_linux.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlogger.dir/build.make CMakeFiles/qlogger.dir/src/platform/platform_linux.cc.o
+.PHONY : src/platform/platform_linux.cc.o
+
+src/platform/platform_linux.i: src/platform/platform_linux.cc.i
+.PHONY : src/platform/platform_linux.i
+
+# target to preprocess a source file
+src/platform/platform_linux.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlogger.dir/build.make CMakeFiles/qlogger.dir/src/platform/platform_linux.cc.i
+.PHONY : src/platform/platform_linux.cc.i
+
+src/platform/platform_linux.s: src/platform/platform_linux.cc.s
+.PHONY : src/platform/platform_linux.s
+
+# target to generate assembly for a file
+src/platform/platform_linux.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qlogger.dir/build.make CMakeFiles/qlogger.dir/src/platform/platform_linux.cc.s
+.PHONY : src/platform/platform_linux.cc.s
+
 src/qlogger.o: src/qlogger.cc.o
 .PHONY : src/qlogger.o
 
@@ -203,6 +227,9 @@ help:
 	@echo "... examples/simple.o"
 	@echo "... examples/simple.i"
 	@echo "... examples/simple.s"
+	@echo "... src/platform/platform_linux.o"
+	@echo "... src/platform/platform_linux.i"
+	@echo "... src/platform/platform_linux.s"
 	@echo "... src/qlogger.o"
 	@echo "... src/qlogger.i"
 	@echo "... src/qlogger.s"

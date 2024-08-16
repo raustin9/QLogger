@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/raustin9/src/amphora/external/Mantis/external/QLogger/src/platform/platform_linux.cc" "CMakeFiles/qlogger.dir/src/platform/platform_linux.cc.o" "gcc" "CMakeFiles/qlogger.dir/src/platform/platform_linux.cc.o.d"
   "/home/raustin9/src/amphora/external/Mantis/external/QLogger/src/qlogger.cc" "CMakeFiles/qlogger.dir/src/qlogger.cc.o" "gcc" "CMakeFiles/qlogger.dir/src/qlogger.cc.o.d"
   )
 

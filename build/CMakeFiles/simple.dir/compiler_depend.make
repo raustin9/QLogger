@@ -193,8 +193,23 @@ CMakeFiles/simple.dir/examples/simple.cc.o: ../examples/simple.cc \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  ../include/qlogger/qlogger.h
+  ../include/qlogger/qlogger.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  ../include/qlogger/platform/platform.h \
+  ../include/qlogger/platform/defines.h
 
+
+../include/qlogger/platform/platform.h:
+
+/usr/include/c++/11/bits/fstream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 
@@ -372,6 +387,8 @@ CMakeFiles/simple.dir/examples/simple.cc.o: ../examples/simple.cc \
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
+../include/qlogger/platform/defines.h:
+
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
@@ -397,6 +414,8 @@ CMakeFiles/simple.dir/examples/simple.cc.o: ../examples/simple.cc \
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/c++/11/iosfwd:
+
+/usr/include/c++/11/bits/codecvt.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
@@ -571,6 +590,8 @@ CMakeFiles/simple.dir/examples/simple.cc.o: ../examples/simple.cc \
 /usr/include/c++/11/bits/locale_classes.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+
+/usr/include/c++/11/fstream:
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
