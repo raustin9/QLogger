@@ -10,11 +10,12 @@
 #include <string>
 #include <fstream>
 #include "platform/platform.h"
+#include "platform/defines.h"
 
 namespace qlogger {
 constexpr int BUFSIZE = 200; // bytes to allocate on the stack for writing
 
-class Logger {
+class QAPI Logger {
 public:
     Logger()
     : m_use_colors(true)
