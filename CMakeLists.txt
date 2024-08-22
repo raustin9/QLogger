@@ -15,9 +15,6 @@ file(GLOB QLOGGER_HEADERS_PRIVATE
     "${PROJECT_SOURCE_DIR}/src/*.h"
 )
 
-if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
-    # target_compile_options(${PROJECT_NAME} PRIVAE "\EHsc")
-endif()
 
 # The include path to specify for building the library
 set(QLOGGER_INCLUDE_DIR
@@ -30,6 +27,9 @@ target_include_directories(${PROJECT_NAME}
     "${QLOGGER_INCLUDE_DIR}"
 )
 target_compile_options(${PROJECT_NAME} PUBLIC "-DQEXPORT")
+if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
+    target_compile_options(${PROJECT_NAME} PRIVATE "/EHsc")
+endif()
 
 # Build examples
 file(GLOB SIMPLE_SOURCE
