@@ -4,7 +4,15 @@ project(qlogger VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_CXX_FLAGS "-Wall -std=c++20")
+
+set(CMAKE_CXX_FLAGS "-Wall ")
+
+if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
+    target_compile_options(${PROJECT_NAME} "-std=c++20 -I/usr/include/c++/11 -I/usr/include/x86_64-linux-gnu/c++/11")
+    target_link_libraries(${PROJECT_NAME} PRIVATE -lX11)
+# elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
+endif()
+
 
 file(GLOB QLOGGER_SOURCES 
     "${PROJECT_SOURCE_DIR}/src/*.cc"
@@ -30,6 +38,8 @@ target_compile_options(${PROJECT_NAME} PUBLIC "-DQEXPORT")
 if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
     target_compile_options(${PROJECT_NAME} PRIVATE "/EHsc")
 endif()
+
+target_compile_definitions(${PROJECT_NAME} PUBLIC QEXPORT)
 
 # Build examples
 file(GLOB SIMPLE_SOURCE
