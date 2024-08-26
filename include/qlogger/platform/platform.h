@@ -31,9 +31,9 @@ enum class color : int {
     NUM_COLORS
 };
 
-void console_write(color msg_color, const std::string& msg);
+void QAPI console_write(color msg_color, const std::string& msg);
 
-void console_error(color msg_color, const std::string& err);
+void QAPI console_error(color msg_color, const std::string& err);
 
 } // platform namespace
 
