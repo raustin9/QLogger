@@ -62,7 +62,7 @@ public:
         }
 
         if (m_use_console) {
-            platform::console_error(color, final);
+            platform::console_write(color, final);
         }
     }
     template <typename ...Args>
@@ -79,7 +79,7 @@ public:
         // }
 
         if (m_use_console) {
-            platform::console_error(color, final);
+            platform::console_write(color, final);
         }
     }
 
@@ -95,7 +95,8 @@ public:
         // }
 
         if (m_use_console) {
-            platform::console_error(color, final);
+            platform::console_write(color, final);
+            // platform::console_error(color, final);
         }
     }
 
@@ -114,7 +115,8 @@ public:
         // }
 
         if (m_use_console) {
-            platform::console_error(color, final);
+            platform::console_write(color, final);
+            // platform::console_error(color, final);
         }
     }
 
@@ -130,7 +132,8 @@ public:
         // }
 
         if (m_use_console) {
-            platform::console_error(color, final);
+            platform::console_write(color, final);
+            // platform::console_error(color, final);
         }
     }
 
@@ -165,7 +168,7 @@ public:
         // }
 
         if (m_use_console) {
-            platform::console_error(color, final);
+            platform::console_write(color, final);
         }
     }
 
@@ -182,7 +185,7 @@ public:
             // }
 
             if (m_use_console) {
-                platform::console_error(color, prefix);
+                platform::console_write(color, prefix);
             }
             return;
         }
@@ -216,7 +219,7 @@ public:
         // }
 
         if (m_use_console) {
-            platform::console_error(color, final);
+            platform::console_write(color, final);
         }
     }
 
@@ -251,7 +254,7 @@ public:
         // }
 
         if (m_use_console) {
-            platform::console_error(color, final);
+            platform::console_write(color, final);
         }
     }
 

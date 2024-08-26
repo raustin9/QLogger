@@ -1,6 +1,6 @@
 /*
  * QLogger
- * platform/platform_linux.cc
+ * platform/platform_windows.cc
  *
  * The 
  *
@@ -9,9 +9,9 @@
 #include "platform/platform.h"
 #include "platform/defines.h"
 #include "qlogger.h"
-#include <windows.h>
 
 #ifdef Q_PLATFORM_WINDOWS
+#include <windows.h>
 namespace qlogger {
 
 namespace platform {
@@ -86,7 +86,7 @@ void console_error(color msg_color, const std::string& msg) {
 	SetConsoleTextAttribute(console_handle, Attributes);
 }
 
-}
+} // platform namespace
 
 } // qlogger namespace
 #endif // Q_PLATFORM_WINDOWS
