@@ -74,9 +74,9 @@ public:
         char final[2 * BUFSIZE];
         std::snprintf(final, 2*BUFSIZE, prefix, args...);
        
-        if (m_log_file.is_open()) {
-            m_log_file << final;
-        }
+        // if (m_log_file.is_open()) {
+        //     m_log_file << final;
+        // }
 
         if (m_use_console) {
             platform::console_error(color, final);
@@ -90,9 +90,9 @@ public:
         std::snprintf(final, BUFSIZE, "[ERROR]%s\n", fmt);
         
         // If we have a log file open, write to that
-        if (m_log_file.is_open()) {
-            m_log_file << final;
-        }
+        // if (m_log_file.is_open()) {
+        //     m_log_file << final;
+        // }
 
         if (m_use_console) {
             platform::console_error(color, final);
@@ -109,9 +109,9 @@ public:
         std::snprintf(final, 2*BUFSIZE, prefix, args...);
        
         // If we have a log file open, write to that
-        if (m_log_file.is_open()) {
-            m_log_file << final;
-        }
+        // if (m_log_file.is_open()) {
+        //     m_log_file << final;
+        // }
 
         if (m_use_console) {
             platform::console_error(color, final);
@@ -125,9 +125,9 @@ public:
         std::snprintf(final, BUFSIZE, "[WARN]%s\n", fmt);
         
         // If we have a log file open, write to that
-        if (m_log_file.is_open()) {
-            m_log_file << final;
-        }
+        // if (m_log_file.is_open()) {
+        //     m_log_file << final;
+        // }
 
         if (m_use_console) {
             platform::console_error(color, final);
@@ -144,9 +144,9 @@ public:
         std::snprintf(final, 2*BUFSIZE, prefix, args...);
        
         // If we have a log file open, write to that
-        if (m_log_file.is_open()) {
-            m_log_file << final;
-        }
+        // if (m_log_file.is_open()) {
+        //     m_log_file << final;
+        // }
 
         if (m_use_console) {
             platform::console_write(color, final);
@@ -160,9 +160,9 @@ public:
         std::snprintf(final, BUFSIZE, "[DEBUG]%s\n", fmt);
         
         // If we have a log file open, write to that
-        if (m_log_file.is_open()) {
-            m_log_file << final;
-        }
+        // if (m_log_file.is_open()) {
+        //     m_log_file << final;
+        // }
 
         if (m_use_console) {
             platform::console_error(color, final);
@@ -177,9 +177,9 @@ public:
        
         // weird bullshit to avoid format compiler warnings
         if (sizeof ...(Args) == 0) {
-            if (m_log_file.is_open()) {
-                m_log_file << prefix;
-            }
+            // if (m_log_file.is_open()) {
+            //     m_log_file << prefix;
+            // }
 
             if (m_use_console) {
                 platform::console_error(color, prefix);
@@ -192,7 +192,11 @@ public:
        
         // If we have a log file open, write to that
         if (m_log_file.is_open()) {
-            m_log_file << final;
+            try {
+                m_log_file << final;
+            } catch (auto err) {
+
+            }
         }
 
         if (m_use_console) {
@@ -207,9 +211,9 @@ public:
         std::snprintf(final, BUFSIZE, "[INFO]%s\n", fmt);
         
         // If we have a log file open, write to that
-        if (m_log_file.is_open()) {
-            m_log_file << final;
-        }
+        // if (m_log_file.is_open()) {
+        //     m_log_file << final;
+        // }
 
         if (m_use_console) {
             platform::console_error(color, final);
@@ -226,9 +230,9 @@ public:
         std::snprintf(final, 2*BUFSIZE, prefix, args...);
        
         // If we have a log file open, write to that
-        if (m_log_file.is_open()) {
-            m_log_file << final;
-        }
+        // if (m_log_file.is_open()) {
+        //     m_log_file << final;
+        // }
 
         if (m_use_console) {
             platform::console_write(color, final);
@@ -242,9 +246,9 @@ public:
         std::snprintf(final, BUFSIZE, "[TRACE]%s\n", fmt);
         
         // If we have a log file open, write to that
-        if (m_log_file.is_open()) {
-            m_log_file << final;
-        }
+        // if (m_log_file.is_open()) {
+        //     m_log_file << final;
+        // }
 
         if (m_use_console) {
             platform::console_error(color, final);
@@ -262,9 +266,9 @@ public:
         std::snprintf(final, 2*BUFSIZE, prefix, args...);
         
         // If we have a log file open, write to that
-        if (m_log_file.is_open()) {
-            m_log_file << final;
-        }
+        // if (m_log_file.is_open()) {
+        //     m_log_file << final;
+        // }
 
         if (m_use_console) {
             platform::console_write(color, final);
